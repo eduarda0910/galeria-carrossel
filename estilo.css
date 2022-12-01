@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background:linear-gradient(rgb(227, 124, 253) 10%, rgb(23, 12, 68) 80%);
+  background-color: rgb(90, 9, 167);
+
+  color: rgb(15, 3, 43);
+  
+}
+.container {
+  height: 560px;
+  width: 900px; 
+  border-radius: 10px  ;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+   
+header{
+  width: 100%;
+  background-image: url(img/novotema2.png);
+  display: flex;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: rgb(3, 68, 68);
+}
+ .formTex h1{
+
+  text-shadow: 10px 2px 5px rgb(239, 242, 245);
+
+ }
+
+.bar {
+  background-color: rgba(162, 165, 165, 0.87);
+  width: 70px;
+  height: 5px;
+  border: 2px solid rgb(87, 81, 88);
+  margin: 6px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navegacao {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.bar:hover {
+  background-color:rgb(255, 251, 255);
+}
+
+input {
+  display: none;
+}
+
+.imagens {
+  display: flex;
+  height: 100%;
+  width: 600%;
+}
+.imagem {
+  width: 16.6666666667%;
+  transition: 0.3s;
+}
+.imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+#imagem1:checked ~ .img1 {
+  margin-left: 0;
+}
+
+#imagem2:checked ~ .img1 {
+  margin-left: -16.6666666667%;
+}
+
+  #imagem3:checked ~ .img1{
+  margin-left: -33.3333333334%;
+}
+
+#imagem4:checked ~ .img1{
+  margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+  margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+  margin-left: -83.3333333333%;
+}
+
+
+footer{
+
+background-color:  rgb(90, 9, 167);
+color:  rgb(15, 3, 43);
+position: absolute;
+bottom: 0px;
+width: 100%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 20px;
+}
+.formTex footer{
+
+  text-shadow: 10px 2px 5px rgb(239, 242, 245);
+}
+
+
+
+
